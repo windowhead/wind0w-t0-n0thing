@@ -6,6 +6,15 @@
     font-style: normal;
 }
 
+/*
+own code
+*/
+
+#herocarousel .carousel-item img {
+    height: 100vh;       /* adjust to your desired height */
+    object-fit: cover;   /* keeps aspect ratio and crops overflow */
+  }
+
 /**
  * = Backgrounds
  */
@@ -3723,6 +3732,7 @@ button.section-black:focus {
  }
 
  .card-primary .card-header {
+    font-family: 'Windows 95';
     background: #C0C0C0;
  }
 
