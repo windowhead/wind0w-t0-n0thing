@@ -1535,6 +1535,32 @@ button.section-black:focus {
     color: black;
 }
 
+/* hover/active: invert the 3D borders to produce pressed-in look WITHOUT touching fonts */
+.navbar .navbar-nav .nav-link:before,
+.btn:before {
+  transition: border-color 80ms linear;
+}
+
+/* nav links: invert on hover/focus/active */
+.navbar .navbar-nav .nav-link:hover:before,
+.navbar .navbar-nav .nav-link:focus:before,
+.navbar .navbar-nav .nav-link:active:before {
+  border-top-color: #08080E;
+  border-left-color: #08080E;
+  border-bottom-color: #FCFCFC;
+  border-right-color: #FCFCFC;
+}
+
+/* buttons: invert on hover/focus/active (high specificity so it overrides Bootstrap) */
+.btn:not(:disabled):not(.disabled):hover:before,
+.btn:not(:disabled):not(.disabled):focus:before,
+.btn:not(:disabled):not(.disabled):active:before {
+  border-top-color: #858585;
+  border-left-color: #858585;
+  border-bottom-color: #ffffff;
+  border-right-color: #ffffff;
+}
+
 .navbar .time {
     font-size: .65rem;
     border-top: 1px solid #08080E;
@@ -6653,4 +6679,30 @@ a:hover,
 
 .fmxw-400 {
     max-width: 400px !important;
+}
+
+/* hover/active: invert the 3D borders to produce pressed-in look WITHOUT touching fonts */
+.navbar .navbar-nav .nav-link:before,
+.btn:before {
+  transition: border-color 80ms linear;
+}
+
+/* nav links: invert on hover/focus/active */
+.navbar .navbar-nav .nav-link:hover:before,
+.navbar .navbar-nav .nav-link:focus:before,
+.navbar .navbar-nav .nav-link:active:before {
+  border-top-color: #08080E;
+  border-left-color: #08080E;
+  border-bottom-color: #FCFCFC;
+  border-right-color: #FCFCFC;
+}
+
+/* buttons: invert on hover/focus/active (high specificity so it overrides Bootstrap) */
+.btn:not(:disabled):not(.disabled):hover:before,
+.btn:not(:disabled):not(.disabled):focus:before,
+.btn:not(:disabled):not(.disabled):active:before {
+  border-top-color: #858585;
+  border-left-color: #858585;
+  border-bottom-color: #ffffff;
+  border-right-color: #ffffff;
 }
