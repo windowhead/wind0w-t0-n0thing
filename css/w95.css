@@ -10,9 +10,28 @@
 own code
 */
 
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+main {
+    flex: 1; 
+}
+
+footer {
+    background-color: #c0c0c0; 
+    padding: 10px;
+    text-align: center;
+}
+
 #herocarousel .carousel-item img {
-    height: 100vh;       /* adjust to your desired height */
-    object-fit: cover;   /* keeps aspect ratio and crops overflow */
+    height: 100vh;      
+    object-fit: cover;   
   }
 
 /**
@@ -3623,13 +3642,25 @@ button.section-black:focus {
      border-left: 3px solid #BDBDBD;
      border-right: 3px solid #BDBDBD;
      border-bottom: 2px solid #bdbdbd;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+
  }
+
+ .card-image-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+}
 
  .card-footer {
     padding: 10px 7px;
  }
 
- /* card images: responsive, constrained inside card, and match card pixel border */
+
 .card-image {
     display: block;
     width: 100%;
@@ -3644,13 +3675,18 @@ button.section-black:focus {
     border-right: 2px solid #393939;
     border-bottom: 2px solid #393939;
     border-radius: 0;
+    max-height: 150px; 
+    object-fit: contain; 
 }
 @media (max-width: 575.98px) {
     .card-image {
-        /* keep a little breathing room on very small screens */
         max-height: 40vh;
         object-fit: cover;
     }
+}
+
+.d-flex.justify-content-center.mt-3 {
+    margin-top: auto; 
 }
 
 /**
