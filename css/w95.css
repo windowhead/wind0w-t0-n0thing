@@ -10,6 +10,24 @@
 own code
 */
 
+.carousel-text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10; /* Ensure it appears above the images */
+    text-align: center;
+    color: white;
+    font-family: 'lo res', 'Lo Res', 'Windows 95', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow for better readability */
+}
+
+.carousel-text-overlay h1 {
+    font-size: 4rem; /* Adjust size as needed */
+    font-weight: bold;
+    margin: 0;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -5663,4 +5681,8 @@ a:hover,
   border-radius: 0;
   display: block;
   background-clip: padding-box;
+}
+
+.gallery-block {
+    margin-bottom: 5rem;
 }
