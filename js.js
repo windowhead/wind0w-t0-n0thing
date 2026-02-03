@@ -6,3 +6,4 @@ window.lightGallery(container, {
         lgThumbnail
     ],
 });
+
