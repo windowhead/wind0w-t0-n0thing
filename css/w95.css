@@ -3641,6 +3641,7 @@ button.section-black:focus {
  */
 
  .card {
+    
      border-top: 2px solid white;
      border-left: 2px solid white;
      border-right: 2px solid #393939;
@@ -3729,6 +3730,24 @@ button.section-black:focus {
     }
 }
 
+.card-image_video {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #393939;
+    border-bottom: 2px solid #393939;
+    border-radius: 0;
+    max-height: 500px; 
+    object-fit: contain; 
+}
+
 .d-flex.justify-content-center.mt-3 {
     margin-top: auto; 
 }
@@ -3764,6 +3783,8 @@ button.section-black:focus {
 .close:focus span:not(.sr-only) {
     background-color: transparent;
 }
+
+
 
 
 /**
