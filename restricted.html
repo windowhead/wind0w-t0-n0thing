@@ -53,41 +53,41 @@
 
 
 <script>
-    const correctPassword = "1234";
+const correctPassword = "1234";
 
-    const passwordInput = document.getElementById("password-input");
-    const submitButton = document.getElementById("submit-password");
-    const toggleButton = document.getElementById("toggle-password");
-    const errorMessage = document.getElementById("error-message");
+const passwordInput = document.getElementById("password-input");
+const submitButton = document.getElementById("submit-password");
+const toggleButton = document.getElementById("toggle-password");
+const errorMessage = document.getElementById("error-message");
 
-    const passwordSection = document.getElementById("password-section");
-    const restrictedSection = document.getElementById("restricted-section");
+function checkPassword() {
+    if(passwordInput.value === correctPassword){
 
-    function checkPassword() {
-        if(passwordInput.value === correctPassword){
-    window.location.href = "video.html"; 
-        } else {
-            errorMessage.style.display = "block";
-        }
+        sessionStorage.setItem("authenticated", "true"); // ADD THIS
+
+        window.location.href = "marketing.html"; 
+    } else {
+        errorMessage.style.display = "block";
     }
+}
 
-    submitButton.addEventListener("click", checkPassword);
+submitButton.addEventListener("click", checkPassword);
 
-    passwordInput.addEventListener("keydown", function(e){
-        if(e.key === "Enter"){
-            checkPassword();
-        }
-    });
+passwordInput.addEventListener("keydown", function(e){
+    if(e.key === "Enter"){
+        checkPassword();
+    }
+});
 
-    toggleButton.addEventListener("click", function(){
-        if(passwordInput.type === "password"){
-            passwordInput.type = "text";
-            toggleButton.textContent = "Hide";
-        } else {
-            passwordInput.type = "password";
-            toggleButton.textContent = "Reveal";
-        }
-    });
+toggleButton.addEventListener("click", function(){
+    if(passwordInput.type === "password"){
+        passwordInput.type = "text";
+        toggleButton.textContent = "Hide";
+    } else {
+        passwordInput.type = "password";
+        toggleButton.textContent = "Reveal";
+    }
+});
 </script>
 
 </body>

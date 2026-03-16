@@ -62,7 +62,7 @@ footer {
 
 /* Login card */
 #password-section {
-    background-image: url('/clouds.jpg');
+    background: url("https://raw.githubusercontent.com/windowhead/wind0w-t0-n0thing/refs/heads/main/clouds.jpg");
 }
 
 #password-card {
