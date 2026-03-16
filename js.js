@@ -7,3 +7,18 @@ window.lightGallery(container, {
     ],
 });
 
+const correctPassword = "Bewerbung2026";
+                const passwordInput = document.getElementById('password-input');
+                const submitButton = document.getElementById('submit-password');
+                const errorMessage = document.getElementById('error-message');
+                const restrictedContent = document.getElementById('restricted-content');
+                const passwordPrompt = document.getElementById('password-prompt');
+        
+                submitButton.addEventListener('click', () => {
+                    if (passwordInput.value === correctPassword) {
+                        passwordPrompt.style.display = 'none';
+                        restrictedContent.style.display = 'block';
+                    } else {
+                        errorMessage.style.display = 'block';
+                    }
+                });
