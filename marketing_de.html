@@ -1,71 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!DOCTYPE html>
-    <html lang="en">
-    
-        <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-            <title>Video Player</title>
-            <meta name="author" content="Nate">
-        
-        
-            <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon.png">
-            <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-            <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-            <link rel="manifest" href="img/favicon/site.webmanifest">
-            <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-            <meta name="msapplication-TileColor" content="#2d89ef">
-            <meta name="theme-color" content="#ffffff">
-            <!-- Bootstrap CSS -->
-            <link type="text/css" rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-            <!-- Pixel CSS -->
-            <link type="text/css" rel="stylesheet" href="css/w95.css">
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-            <!-- Global site tag (gtag.js) - Google Analytics --> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141734189-1"></script> <script>   window.dataLayer = window.dataLayer || [];   function gtag(){dataLayer.push(arguments);}   gtag('js', new Date());    gtag('config', 'UA-141734189-1'); </script>
-             <link href="js/w95.js" rel="stylesheet">
-        </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Portfolio</title>
+    <meta name="author" content="Nate">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/w95.css">
+
+    <script>
+if (sessionStorage.getItem("authenticated") !== "true") {
+    window.location.href = "restricted.html";
+}
+</script>
+
+</head>
 <body>
+
     <header class="header-global">
         <nav id="navbar-main" class="navbar d-flex flex-row align-items-center navbar-main navbar-expand-lg navbar-dark justify-content-between">
             <ul class="navbar-nav navbar-nav-hover flex-row align-items-center">
                 <li class="nav-item">
                     <a href="index.html" class="nav-link" role="button">
-                        <span class="nav-link-inner-text">Start</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="paint.html" class="nav-link" role="button">
-                        <span class="nav-link-inner-text">Paint</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="camera.html" class="nav-link" role="button">
-                        <span class="nav-link-inner-text">Camera</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="video.html" class="nav-link" role="button">
-                        <span class="nav-link-inner-text">Video Player</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                  <a href="animation.html" class="nav-link" role="button">
-                    <span class="nav-link-inner-text">Animations</span>
-                </a>
-                </li>
-                <li class="nav-item">
-                    <a href="video_de.html" class="nav-link" role="button">
-                        <span class="nav-link-inner-text">DE</span>
+                        <span class="nav-link-inner-text">Zurueck</span>
                     </a>
                 </li>
             </ul>
         </nav>
     </header>
+
     <main>
         <div id="herocarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-text-overlay">
-                <h1>Video-Player</h1>
+                <h1>Various Projects</h1>
             </div>
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#herocarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -112,73 +90,64 @@
 
         <div class="container-fluid px-3">
             <div class="row gy-3">
-              <!-- Card 1 -->
-              <div class="col-12 col-md-6">
+            
+              <div class="col-12">
                 <div class="card card-tertiary">
                   <div class="card-header text-center">
-                    <h5 class="pt-2">Filmproject Yellow Barrel</h5>
+                    <h5 class="pt-2">Berufsmeisterschaften 2025</h5>
                   </div>
                   <div class="card-body">
                     <div class="card-image-wrap">
-                      <img src="img/Images/master.00_05_47_11.Standbild003.jpg" alt="Card 1 Image" class="card-image_video img-fluid mb-2 bordered-image" style="width: 100%; height: auto;">
-                    </div>
-                    <div class="d-flex justify-content-center mt-3">
-                      <a href="https://www.youtube.com/watch?v=IrKs1tUfEMU" target="_blank">
-                        <button class="btn btn-sm me-2 btn-primary border-dark" type="button" style="font-family:'lo res','Lo Res','Windows 95',sans-serif; font-weight:600;">
-                          <span class="btn-text">View Video</span>
-                        </button>
-                      </a>
+                      <img src="img/Images/Marketing und CD/2025_Berufsmeisterschaften_NateFriedrich_Visual.png" alt="Card 1 Image" class="card-image_video img-fluid mb-2 bordered-image" style="width: 100%; height: auto;">
                     </div>
                     <p class="text-center mt-3">
-                      One last project, a group of students and a dream.<br>
-                      This was the largest project I was part of during my apprenticeship, taking months of careful story-writing, scripting, filming and postproduction in our 4th and final year. <br>
-                      I was able to join the group after they’ve done the story-writing and was with them through the process of visualizing, filming, improvising on set, acting and part of postproduction, as well as the person in charge of behind-the-scenes footage.<br><br>
-                      Down below are parts of the storyboard I’ve drawn for the visualization of the story.
+                     As a part of a challange, students were allowed to take part in the Berufsmesiterschaften. You get around 3 hours of time to complete an assignment.<br>
+                     In this case it was a small marketing capaign for a company called Vintage finds. The logo was given while you were tasked with designing a promotional post, a visual and a marketing strategy, all in english.<br><br>
+                     Due to the short time given its a big challange, but overall very fun to do.
                     </p>
-                    <div class="additional-images d-flex flex-column align-items-center mt-3">
-                      <img src="img/Images/storyboarding/SG1-2.3.jpg" alt="Storyboard Image 1" class="img-fluid bordered-image mb-3" style="width: 100%; height: auto;">
-                      <img src="img/Images/storyboarding/SG3-5.2.jpg" alt="Storyboard Image 2" class="img-fluid bordered-image" style="width: 100%; height: auto;">
+                    <div class="additional-images d-flex justify-content-center gap-3 mt-3">
+                      <div class="mt-3">
+                        <video class="img-fluid bordered-video" style="width: 70%; height: auto;" controls loop>
+                          <source src="img/Images/Marketing und CD/2025_Berufsmeisterschaften_NateFriedrich_Motion.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                        </video>
+                      </div>
+                      <embed src="img/Images/Marketing und CD/2025_Berufsmeisterschaften_NateFriedrich_Marketing.pdf" type="application/pdf" width="70%">
                     </div>
                   </div>
                 </div>
               </div>
         
-              <!-- Card 2 -->
-              <div class="col-12 col-md-6">
+              <div class="row gy-3">
+              <div class="col-12">
                 <div class="card card-tertiary">
                   <div class="card-header text-center">
-                    <h5 class="pt-2">VA Filmproject: Discrimination</h5>
+                    <h5 class="pt-2">Mini capaign: Fruibi Soda</h5>
                   </div>
                   <div class="card-body">
                     <div class="card-image-wrap">
-                      <img src="img/Images/discrimination.png" alt="Card 2 Image" class="card-image_video img-fluid mb-2 bordered-image" style="width: 100%; height: auto;">
+                      <img src="img/Images/Marketing und CD/FruibiSodaLogo.png" alt="Card 2 Image" class="img-fluid mb-2" style="width: 80%; height: auto;">
                     </div>
-                    <div class="d-flex justify-content-center mt-3">
-                      <a href="https://youtu.be/j_NrHagcSCw" target="_blank">
-                        <button class="btn btn-sm me-2 btn-primary border-dark" type="button" style="font-family:'lo res','Lo Res','Windows 95',sans-serif; font-weight:600;">
-                          <span class="btn-text">View Video</span>
-                        </button>
-                      </a>
-                    </div>
-                    <p class="text-center mt-3">Part of our final grade was the VA (Vertiefungsarbeit), which my friend and I made about discrimination of women and queer people alike, studying the differences and similarities.<br>
-                    Part of it is filmed, part of it was drawn and later animated in adobe after effects. This was our final product after finishing the literary part.</p>
-                    <div class="mt-3">
-                        <video class="img-fluid bordered-video" style="width: 100%; height: auto;" controls autoplay loop>
-                          <source src="img/Images/Animation/VAAnimation.mp4" type="video/mp4">
-                          Your browser does not support the video tag.
-                        </video>
+                    
+                    <p class="text-center mt-3">
+                        In our marketing class we made quite a few projects, this was one of the last ones we were able to work on. This was a solo project and had to be done within 6 lessons (each 45 mins.)<br>
+                        Created were a logo, a marketing strategy and a poster.
+                    </p>
+                    <div class="additional-images d-flex justify-content-center gap-3 mt-3">
+                      <div class="mt-3 d-flex justify-content-center">
+                        <img src="img/Images/Marketing und CD/FruibiSodaPOSTER.png" alt="" width="70%">
                       </div>
-                      <div class="additional-images d-flex flex-column align-items-center mt-3">
-                        <img src="img/Images/storyboarding/Storyboard.png" alt="Storyboard Image 3" class="img-fluid bordered-image mb-3" style="width: 100%; height: auto;">
-                        </div>
-                  </div>
+                      <embed src="img/Images/Marketing und CD/FruibiSodaCAMPAIGN.pdf" type="application/pdf" width="70%" class="d-flex justify-content-center">
+                    </div>
                 </div>
               </div>
+              </div>
 
-              <div class="col-12 col-md-6">
+              <div class="row gy-3">
+              <div class="col-12">
                 <div class="card card-tertiary">
                   <div class="card-header text-center">
-                    <h5 class="pt-2">Animation Project: Falcon in the Wind</h5>
+                    <h5 class="pt-2">Homepages</h5>
                   </div>
                   <div class="card-body">
                     <div class="card-image-wrap">
@@ -199,8 +168,9 @@
                   </div>
                 </div>
               </div>
+              </div>
             
-              <!-- New Card 4 -->
+
               <div class="col-12 col-md-6">
                 <div class="card card-tertiary">
                   <div class="card-header text-center">
@@ -267,6 +237,5 @@
     </nav>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
-</body>
+
+    </body>

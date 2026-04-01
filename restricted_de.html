@@ -26,8 +26,8 @@
         <nav id="navbar-main" class="navbar d-flex flex-row align-items-center navbar-main navbar-expand-lg navbar-dark justify-content-between">
             <ul class="navbar-nav navbar-nav-hover flex-row align-items-center">
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link" role="button">
-                        <span class="nav-link-inner-text">Back to home</span>
+                    <a href="index_de.html" class="nav-link" role="button">
+                        <span class="nav-link-inner-text">Zurueck</span>
                     </a>
                 </li>
             </ul>
@@ -36,15 +36,15 @@
 
 <section id="password-section" class="full-section">
     <div id="password-card" class="card card-tertiary p-4">
-        <h4 class="text-center mb-2">Restricted Area</h4>
-        <p class="text-center mb-4">Enter password to continue</p>
+        <h4 class="text-center mb-2">Gesperrte Seite</h4>
+        <p class="text-center mb-4">Bitte geben Sie das Passwort ein.</p>
         <input type="password" id="password-input" class="form-control mb-3" placeholder="Password">
         <div class="d-flex gap-2 mb-3">
-            <button id="toggle-password" class="btn btn-secondary w-50">Reveal</button>
+            <button id="toggle-password" class="btn btn-secondary w-50">Anzeigen</button>
             <button id="submit-password" class="btn btn-primary w-50">Enter</button>
         </div>
         <p id="error-message" style="color:red; display:none;" class="text-center">
-            Incorrect password
+            Falsches Passwort
         </p>
     </div>
 </section>
@@ -63,9 +63,9 @@ const errorMessage = document.getElementById("error-message");
 function checkPassword() {
     if(passwordInput.value === correctPassword){
 
-        sessionStorage.setItem("authenticated", "true"); // ADD THIS
+        sessionStorage.setItem("authenticated", "true")
 
-        window.location.href = "marketing.html"; 
+        window.location.href = "marketing_de.html"; 
     } else {
         errorMessage.style.display = "block";
     }
@@ -82,10 +82,10 @@ passwordInput.addEventListener("keydown", function(e){
 toggleButton.addEventListener("click", function(){
     if(passwordInput.type === "password"){
         passwordInput.type = "text";
-        toggleButton.textContent = "Hide";
+        toggleButton.textContent = "Verstecken";
     } else {
         passwordInput.type = "password";
-        toggleButton.textContent = "Reveal";
+        toggleButton.textContent = "Anzeigen";
     }
 });
 </script>
